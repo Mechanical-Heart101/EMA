@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>EduMax - Edit News</title>
+    <meta name="author" content="TM252 Module Team">
+    <meta name="description" content="An online learning resource by students for students">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/custom.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="row align-items-center py-2">
+                <div class="col-4 col-md-2">
+                    <img src="../images/EduMax_logo.png" alt="EduMax logo" class="img-fluid">
+                </div>
+                <div class="col-4 col-md-8 text-center">
+                    <h1 class="header m-0">EduMax</h1>
+                </div>
+                <div class="col-4 col-md-2 text-end">
+                    <a class="btn btn-primary" href="./placeholder.html" role="button">Login</a>
+                </div>
+            </div>
+
+            <!-- Navbar -->
+            <div class="row g-0 bg-dark">
+                <div class="col-12 col-md-8">
+                    <nav class="navbar navbar-expand-lg navbar-dark p-2">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"><a class="nav-link" href="./placeholder.html">Home</a></li>
+                                <li class="nav-item"><a class="nav-link active" href="./form.html">News</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./placeholder.html">Your courses</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./placeholder.html">Your information</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./placeholder.html">Module Catalogue</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-12 col-md-4">
+                    <form class="d-flex p-2" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-info" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </header>
+
+        <!-- Breadcrumbs -->
+        <div class="row mt-3">
+            <div class="col">
+                <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="./placeholder.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Edit News</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Main Content: Edit News Form -->
+        <main>
+            <div class="row mt-4">
+                <div class="col-md-8 offset-md-2">
+                    <h2>Edit News Item</h2>
+                    <form id="editNewsForm" method="POST" action="https://students.open.ac.uk/mct/tm252/reflect/reflect.php" novalidate>
+                        <!-- Hidden Item ID -->
+                        <input type="hidden" name="itemID" value="10002000-3000-123456abcdef">
+
+                        <!-- Title -->
+                        <div class="mb-3">
+                            <label for="title" class="form-label">News Title</label>
+                            <input type="text" class="form-control" id="title" name="title" value="Newsletter form">
+                        </div>
+
+                        <!-- Body -->
+                        <div class="mb-3">
+                            <label for="body" class="form-label">News Content</label>
+                            <textarea class="form-control" id="body" name="body" rows="6"> Please check the course website for the full exam schedule.</textarea>
+                        </div>
+
+                        <!-- Publish Date -->
+                        <div class="mb-3">
+                            <label for="date" class="form-label">Publish Date</label>
+                            <input type="date" class="form-control" id="date" name="date" value="2025-09-16">
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="d-flex justify-content-end gap-2">
+                            <button type="submit" class="btn btn-success">Save Changes</button>
+                            <button type="reset" class="btn btn-secondary">Reset</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="mt-5">
+            <div class="row">
+                <div class="col">
+                    <nav class="nav">
+                        <a class="nav-link" href="./placeholder.html">Privacy</a>
+                        <a class="nav-link" href="./placeholder.html">About Us</a>
+                        <a class="nav-link" href="./placeholder.html">Support</a>
+                    </nav>
+                </div>
+                <div class="col text-end">
+                    <p>&copy; EduMax 2024</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
